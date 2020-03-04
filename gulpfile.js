@@ -6,14 +6,14 @@ const sass = require ('gulp-sass');
 
 // Static server
  function bs() {
-  serveSas();
+  serveSass();
   browserSync.init({
       server: {
           baseDir: "./"
       }
   });
   watch("./*.html").on('change', browserSync.reload);
-  watch("./sass/**/*.sass", serveSas);
+  watch("./sass/**/*.sass", serveSass);
   watch("./js/*.js").on('change', browserSync.reload);
 };
 
@@ -25,7 +25,7 @@ function replace(done) {
       done(); 
 };
 
-function serveSas() {
+function serveSass() {
   return src("./sass/*.sass")
       .pipe(sass())
       .pipe(dest("./css"))
