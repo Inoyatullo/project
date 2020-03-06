@@ -74,6 +74,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */ }
 
@@ -322,7 +323,9 @@ template {
 
 .menu {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  -webkit-animation: show 2s ease 2s infinite;
+  animation: show 2s ease 2s infinite; }
 
 .logo {
   color: #E3B873;
