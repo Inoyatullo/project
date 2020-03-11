@@ -11,4 +11,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   closeBtn.addEventListener('click', switchModal);
 
+
+  /* $(".modal").on('click', function (e) {
+    if (e.target == this) $(".modal").fadeOut('fast');
+}) */
 });
