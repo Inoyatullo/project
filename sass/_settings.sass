@@ -5,17 +5,40 @@ html
 body
   font-family: 'Futura Book', sans-serif
   font-size: 1rem
+  font-weight: normal
 img 
   max-width: 100%
 .section
+  padding: 60px 0
+  &--dark
+    background-color: $dark
+    color: $light
   &-title
-    text-transform: uppercase
     text-align: center
-    font-family: Yeseva One, cursive
-    font-style: normal
-    font-weight: 200
-    font-size: 1.428rem
-    line-height: 28px
+    &--left
+      text-align: left
+    &__word
+      display: flex
+      align-items: center
+      &::after
+        content: ""
+        width: 80px
+        height: 2px
+        background-color: $primary
+        margin-left: 1.5rem 
+    &__text
+      font-size: 1.28rem
+      line-height: 2.07rem
+      width: 31.57rem
+    &__heading
+      text-transform: uppercase
+      font-family: Yeseva One, cursive
+      font-style: normal
+      font-weight: 200
+      font-size: 1.428rem
+      line-height: 138%
+      &--primary
+        color: $primary
     &__image
       display: flex
       justify-content: center
