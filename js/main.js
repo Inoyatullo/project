@@ -1,26 +1,32 @@
-/* document.addEventListener("DOMContentLoaded", function(event) { 
+document.addEventListener("DOMContentLoaded", function(event) { 
   const modal = document.querySelector('.modal');
+  const wind = document.querySelector('.wind');
   const modalBtn = document.querySelectorAll('[data-toggle=modal]');
   const closeBtn = document.querySelector('.modal__close');
   const switchModal = () => {
     modal.classList.toggle('modal--visible');
+    wind.classList.toggle('wind--visible');
   }
   modalBtn.forEach(element => {
     element.addEventListener('click', switchModal)
   });
 
   closeBtn.addEventListener('click', switchModal);
+  wind.addEventListener('click', switchModal);
 
+});
 
-  window.addEventListener('click', function (event) {
-    if (event.target == modal ) {
-      modal.style.display = 'none';
-    }
-  });
-}); */
+/* var target = e.target;
+  var its_menu = target == menu || menu.contains(target);
+  var its_hamburger = target == hamburger;
+  var menu_is_active = menu.classList.contains('active');
+
+  if (!its_menu && !its_hamburger && menu_is_active) {
+    toggleMenu();
+  } */
 
 $(document).ready(function () {
-  var modal = $('.modal'),
+ /*  var modal = $('.modal'),
       modalBtn = $('[data-toggle=modal]'),
       closeBtn = $('.modal__close'),
       window = $('.modal');
@@ -33,7 +39,7 @@ $(document).ready(function () {
   });
   window.on('click', function () {
     modal.toggleClass('modal--visible');
-  });
+  }); */
 
   var mySwiper = new Swiper ('.swiper-container', {
     loop: true,

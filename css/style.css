@@ -818,6 +818,13 @@ img {
   .modal__button {
     align-self: flex-end; }
 
+.winnd {
+  opacity: 0;
+  visibility: hidden; }
+  .winnd--visible {
+    opacity: 1;
+    visibility: visible; }
+
 .btn-top {
   display: none;
   position: fixed;
