@@ -77,7 +77,8 @@ $(document).ready(function () {
       userEmail: {
         required: true,
         email: true
-      }
+      },
+      policyCheckbox: "required"
     },
     messages: {
       userName: {
@@ -105,7 +106,7 @@ $(document).ready(function () {
         maxlength: 15
       },
       userPhone: "required",
-      
+      policyCheckbox: "required"
     },
     messages: {
       userName: {

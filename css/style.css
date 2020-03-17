@@ -399,7 +399,8 @@ input.invalid {
   border-bottom: 1px solid tomato; }
 
 .invalid {
-  color: tomato; }
+  color: tomato;
+  position: absolute; }
 
 .container {
   width: 85%;
@@ -876,8 +877,9 @@ img {
 .team__box {
   position: absolute;
   bottom: -58px;
-  left: 40px;
-  max-width: 18.642rem;
+  left: 20px;
+  width: 100%;
+  max-width: 16.642rem;
   background-color: #fff; }
   .team__box-inner {
     padding: 1.571rem 1.9rem 0 1.9rem; }
@@ -969,7 +971,8 @@ img {
     display: flex;
     flex-direction: column;
     flex-basis: 45%;
-    margin-bottom: 3.2rem; }
+    margin-bottom: 3.2rem;
+    position: relative; }
     .footer__input-group--full-with {
       flex-basis: 100%;
       margin-bottom: 1.7rem; }
