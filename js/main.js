@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event) { 
+/* document.addEventListener("DOMContentLoaded", function(event) { 
   const modal = document.querySelector('.modal');
   const wind = document.querySelector('.wind');
   const modalBtn = document.querySelectorAll('[data-toggle=modal]');
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   closeBtn.addEventListener('click', switchModal);
   wind.addEventListener('click', switchModal);
 
-});
+}); */
 
 /* var target = e.target;
   var its_menu = target == menu || menu.contains(target);
@@ -26,10 +26,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   } */
 
 $(document).ready(function () {
- /*  var modal = $('.modal'),
+  var modal = $('.modal'),
       modalBtn = $('[data-toggle=modal]'),
-      closeBtn = $('.modal__close'),
-      window = $('.modal');
+      closeBtn = $('.modal__close');
+      // window = $('.modal');
 
   modalBtn.on('click', function () {
     modal.toggleClass('modal--visible');
@@ -37,7 +37,7 @@ $(document).ready(function () {
   closeBtn.on('click', function () {
     modal.toggleClass('modal--visible');
   });
-  window.on('click', function () {
+  /* window.on('click', function () {
     modal.toggleClass('modal--visible');
   }); */
 
@@ -61,6 +61,91 @@ $(document).ready(function () {
   bullets.css('left', prev.width() +15)
 
   new WOW().init();
+
+  $('.modal__form').validate({
+    errorElement: "div",
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      // compound rule
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче двух символов",
+        maxlength: "Имя не больше 15 символов"
+      },
+      userPhone: "Номер телефона обязательно",
+      userEmail: {
+        required: " указать адрес электронной почты",
+        email: "Введите в фомате: name@domain.com"
+      }
+    }
+
+  });
+
+  $('.control__form').validate({
+    errorElement: "div",
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      
+    },
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче двух символов",
+        maxlength: "Имя не больше 15 символов"
+      },
+      userPhone: "Номер телефона обязательно",
+    }
+
+  });
+  $('.footer__form').validate({
+    errorElement: "div",
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      // compound rule
+      userQuestion: "required"
+    },
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче двух символов",
+        maxlength: "Имя не больше 15 символов"
+      },
+      userPhone: "Номер телефона обязательно",
+      userQuestion: {
+        required: " задать вопрос",
+      }
+    }
+
+  });
+// маска для телефона
+$('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7(___) __-__-___"})
 
 });
 
