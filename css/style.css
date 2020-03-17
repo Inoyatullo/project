@@ -462,7 +462,7 @@ img {
       font-family: Yeseva One, cursive;
       font-style: normal;
       font-weight: 200;
-      font-size: 1.92rem;
+      font-size: 1.52rem;
       line-height: 2.64rem;
       letter-spacing: -1.2px; }
       .section-title__heading--primary {
@@ -859,7 +859,79 @@ img {
 
 .team__section-text {
   max-width: 32rem;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 5rem; }
+
+.team__row {
+  margin-bottom: 7.5rem; }
+
+.team__card {
+  position: relative; }
+
+.team__icon {
+  position: absolute;
+  top: -50px;
+  left: -55px; }
+
+.team__box {
+  position: absolute;
+  bottom: -58px;
+  left: 40px;
+  max-width: 18.642rem;
+  background-color: #fff; }
+  .team__box-inner {
+    padding: 1.571rem 1.9rem 0 1.9rem; }
+  .team__box-title {
+    display: block;
+    color: #131313;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.285rem;
+    line-height: 1.785rem;
+    text-align: center; }
+    .team__box-title--bottom {
+      margin-bottom: 0.4rem; }
+  .team__box-text {
+    display: block;
+    color: #959595;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.285rem;
+    line-height: 1.857rem;
+    text-align: center; }
+    .team__box-text--bottom {
+      margin-bottom: 1.414rem; }
+  .team__box-info {
+    display: block;
+    background-color: #E3B873;
+    padding: 1.1rem 1.642rem;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.928rem;
+    line-height: 1.428rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff; }
+
+.team-text {
+  max-width: 45.57rem;
+  margin: auto;
+  font-style: norma;
+  font-weight: normal;
+  font-size: 1.428rem;
+  line-height: 2.428rem;
+  text-align: center; }
+  .team-text::before {
+    content: '';
+    display: block;
+    margin: auto;
+    margin-bottom: 2.2rem;
+    width: 55px;
+    height: 2px;
+    background-color: #E3B873;
+    border-radius: 30%; }
 
 .footer {
   position: relative;
@@ -1072,6 +1144,18 @@ img {
         justify-content: start; }
     .control__button {
       margin-bottom: -22px; }
+  .team {
+    paddin-bottom: 0;
+    background-color: #131313;
+    color: #fff; }
+    .team__card {
+      margin-bottom: 11.93rem; }
+      .team__card--madia {
+        margin-bottom: 0; }
+    .team-text {
+      display: none; }
+  .section-text {
+    color: #fff; }
   .footer {
     background-image: none;
     background-color: #131313; }
