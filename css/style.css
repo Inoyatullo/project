@@ -399,11 +399,16 @@ input.invalid {
   border-bottom: 1px solid tomato; }
 
 em.invalid {
-  color: tomato;
   position: absolute;
   bottom: -18px;
   left: 0;
   width: 100%; }
+
+.invalid {
+  color: tomato; }
+
+#policyCheckbox-error {
+  color: tomato; }
 
 .container {
   width: 85%;
@@ -754,7 +759,8 @@ img {
 
 .control__policy {
   flex-basis: 100%;
-  margin-top: 1.2rem; }
+  margin-top: 1.2rem;
+  position: relative; }
   .control__policy-label {
     justify-content: center; }
 

@@ -135,7 +135,7 @@ $(document).ready(function () {
         maxlength: "Имя не больше 15 символов"
       },
       userPhone: "Номер телефона обязательно",
-      policyCheckbox: "галочка",
+      policyCheckbox: ""
     }
 
   });
@@ -151,7 +151,8 @@ $(document).ready(function () {
       },
       userPhone: "required",
       // compound rule
-      userQuestion: "required"
+      userQuestion: "required",
+      policyCheckbox: "required"
     },
     messages: {
       userName: {
