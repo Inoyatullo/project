@@ -399,8 +399,7 @@ input.invalid {
   border-bottom: 1px solid tomato; }
 
 .invalid {
-  color: tomato;
-  position: absolute; }
+  color: tomato; }
 
 .container {
   width: 85%;
@@ -971,11 +970,11 @@ img {
     display: flex;
     flex-direction: column;
     flex-basis: 45%;
-    margin-bottom: 3.2rem;
+    min-height: 7rem;
     position: relative; }
     .footer__input-group--full-with {
       flex-basis: 100%;
-      margin-bottom: 1.7rem; }
+      margin-bottom: -1.7rem; }
   .footer__policy {
     flex-basis: 100%;
     margin-bottom: 3.5rem; }
