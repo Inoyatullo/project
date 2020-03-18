@@ -398,8 +398,12 @@ template {
 input.invalid {
   border-bottom: 1px solid tomato; }
 
-.invalid {
-  color: tomato; }
+em.invalid {
+  color: tomato;
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  width: 100%; }
 
 .container {
   width: 85%;
@@ -739,7 +743,8 @@ img {
 .control__input-group {
   display: flex;
   flex-direction: column;
-  flex-basis: 30%; }
+  flex-basis: 30%;
+  position: relative; }
 
 .control__label {
   margin-bottom: -4px; }

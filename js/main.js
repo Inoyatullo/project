@@ -96,7 +96,7 @@ $(document).ready(function () {
   });
 
   $('.control__form').validate({
-    errorElement: "div",
+    errorElement: "em",
     errorClass: "invalid",
     rules: {
       // simple rule, converted to {required:true}
@@ -115,6 +115,7 @@ $(document).ready(function () {
         maxlength: "Имя не больше 15 символов"
       },
       userPhone: "Номер телефона обязательно",
+      policyCheckbox: "галочка",
     }
 
   });
