@@ -1,3 +1,23 @@
+document.addEventListener("DOMContentLoaded", (event) => {
+  
+  const modal = document.querySelector(".modal"),
+      switchModal = () => modal.classList.toggle('modal--visible');
+
+
+  document.body.addEventListener('click', ev => {
+      const {target} = ev;
+      if (target.matches('[data-toggle=modal], .modal__close')) {
+          switchModal();
+      } else if (!target.closest('.modal') && modal.classList.contains('modal--visible')) {
+          switchModal();
+      }
+  });
+
+  document.addEventListener('keydown', e => {
+    e.keyCode === 27 && modal.classList.contains('modal--visible') ? switchModal() : false;
+});
+});
+
 /* document.addEventListener("DOMContentLoaded", function(event) { 
   const modal = document.querySelector('.modal');
   const wind = document.querySelector('.wind');
@@ -23,10 +43,10 @@
 
   if (!its_menu && !its_hamburger && menu_is_active) {
     toggleMenu();
-  } */
-
+  }
+ */
 $(document).ready(function () {
-  var modal = $('.modal'),
+/*   var modal = $('.modal'),
       modalBtn = $('[data-toggle=modal]'),
       closeBtn = $('.modal__close');
       // window = $('.modal');
@@ -37,7 +57,7 @@ $(document).ready(function () {
   closeBtn.on('click', function () {
     modal.toggleClass('modal--visible');
   });
-  /* window.on('click', function () {
+  window.on('click', function () {
     modal.toggleClass('modal--visible');
   }); */
 
