@@ -1018,7 +1018,8 @@ img {
       .footer__info__description__word {
         display: block; }
   .footer__map {
-    margin-bottom: 4.642rem; }
+    margin-bottom: 4.642rem;
+    min-height: 465px; }
   .footer__menu {
     position: relative;
     background-color: #131313;
